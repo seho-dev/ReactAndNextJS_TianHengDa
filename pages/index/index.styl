@@ -1,0 +1,67 @@
+ .indexImage {
+    position absolute
+    width 100%;
+    height 560px;
+}
+.indexBox {
+    position relative;
+    .indexBg{
+        user-select none;
+        width 100%;
+        height 556px;
+        overflow hidden;
+        background:rgba(7,35,68, .4);
+        text-align center;
+        .indexSearch {
+            display flex;
+            justify-content flex-start;
+            align-items center;
+            width 13.48rem;
+            height 1rem;
+            background:rgba(255,255,255,1);
+            border-radius:0.06rem;
+            margin-top 3.98rem;
+            margin-left 50%;
+            transform translateX(-50%);
+            .icon {
+                width 0.58rem;
+                height 0.59rem;
+                margin-left 0.38rem;
+                margin-right 0.5rem;
+            }
+            input{
+                width 8rem;
+                font-size 0.4rem;
+            }
+            ::-webkit-input-placeholder {
+                color: #C8C8C8; 
+                } 
+            :-moz-placeholder {
+                color: #C8C8C8; 
+            } 
+            ::-moz-placeholder {
+                color: #C8C8C8; 
+            } 
+            :-ms-input-placeholder { 
+                color: #C8C8C8; 
+            }
+        }
+        .indexTitle {
+           
+            font-family: "Microsoft YaHei";
+            font-size 1.1rem;
+            color #F5F9FF;
+            margin-top 0.78rem;
+        }
+        .indexTip{
+          
+            color #91B1E1;
+            font-size 0.36rem;
+            margin-top 0.2rem;
+        }
+    }
+    .bgImage {
+        width 100%;
+        height 100%;
+    }
+}
