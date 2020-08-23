@@ -1,0 +1,134 @@
+.listIndex{
+	background-color #F8FAFF;
+	padding-bottom 3.26rem;
+	.indexImage {
+	    position absolute
+	    width 100%;
+	    height 560px;
+	}
+	
+	.indexBox {
+	    position relative;
+		padding 0;
+	    .indexBg{
+	        user-select none;
+	        width 100%;
+	        height 556px;
+	        overflow hidden;
+	        background: rgba(7,35,68, .4);
+	        text-align center;
+	        .indexTitle {
+	            font-family: "Microsoft YaHei";
+	            font-size 1.1rem;
+	            color #F5F9FF;
+	            margin-top 4.38rem;
+	        }
+	        .indexTip{
+	            color #91B1E1;
+	            font-size 0.36rem;
+	            margin-top 0.2rem;
+	        }
+	    }
+	}
+	.listMain{
+		width 24rem;
+		margin 0 auto;
+		display flex;
+		justify-content center;
+		align-items flex-start;
+		.listMainLeft{
+			.listMainLeftImage{
+				position relative;
+				width 7.16rem;
+				height 2.8rem;
+				background url(/image/listTopBg.png) no-repeat center center / 100% 100%;
+				margin-top -1rem;
+				overflow hidden;
+				.title{
+					color #fff;
+					font-size 0.6rem;
+					text-align start;
+					margin-top .78rem;
+					margin-left 1.54rem;
+				}
+				.tip{
+					color #fff;
+					font-size 0.28rem;
+					margin-left 1.92rem;
+					margin-top .4rem;
+				}
+			}
+			.listMainList{
+				position relative;
+				cursor pointer;
+				user-select none;
+				width 4.9rem;
+				&::before{
+					position absolute;
+					left: 0;
+					top: 0;
+					height 100%;
+					content "";
+					border-left .16rem solid #F3F5FB;
+				}
+				.listMainListItem{
+					transition all .3s;
+					position relative;
+					width 100%;
+					height 1.76rem;
+					line-height 1.76rem;
+					font-size 0.4rem;
+					color #95ACB7;
+					padding-left .78rem;
+					font-weight bold;
+					&:hover{
+						opacity .6;
+					}
+					&.active{
+						color #188AD8;
+						border-left .16rem solid #188AD8;
+					}
+					// border-left .16rem solid red;
+				}
+			}
+		}
+		.listMainRight{
+			z-index 4;
+			position relative;
+			width 19.14rem;
+			margin-left -2.22rem;
+			.listMainRightCardItem{
+				cursor pointer;
+				transition all .3s;
+				width:18.72rem;
+				height:5.2rem;
+				display flex;
+				justify-content flex-start;
+				align-items flex-start;
+				padding .42rem;
+				background:rgba(255,255,255,1);
+				margin-top .3rem;
+				&:hover{
+					box-shadow:0rem 0.14rem 0.3rem 0rem rgba(48,75,94,0.18);
+				}
+				img{
+					width 4.78rem;
+					height 4.78rem;
+				}
+				.listMainRightCardItemRight{
+					margin-left .52rem;
+					.crdItemRightTitle{
+						font-size 0.36rem;
+						
+					}
+					.crdItemRightContent{
+						font-size:0.28rem;
+						line-height:0.44rem;
+						color #666666;
+						margin-top .38rem;
+					}
+				}
+			}
+		}
+	}
+}

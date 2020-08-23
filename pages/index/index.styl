@@ -5,12 +5,13 @@
 }
 .indexBox {
     position relative;
+    padding-bottom 2rem;
     .indexBg{
         user-select none;
         width 100%;
         height 556px;
         overflow hidden;
-        background:rgba(7,35,68, .4);
+        background: rgba(7,35,68, .4);
         text-align center;
         .indexSearch {
             display flex;
@@ -19,7 +20,7 @@
             width 13.48rem;
             height 1rem;
             background:rgba(255,255,255,1);
-            border-radius:0.06rem;
+            border-radius: 0.06rem;
             margin-top 3.98rem;
             margin-left 50%;
             transform translateX(-50%);
@@ -46,22 +47,439 @@
                 color: #C8C8C8; 
             }
         }
-        .indexTitle {
-           
+        .indexSearchTitle {
             font-family: "Microsoft YaHei";
             font-size 1.1rem;
             color #F5F9FF;
             margin-top 0.78rem;
         }
         .indexTip{
-          
             color #91B1E1;
             font-size 0.36rem;
             margin-top 0.2rem;
+        }
+
+        
+    }
+    .banner{
+        position relative;
+        width 24rem;
+        height 4.7rem;
+        background-color #fff;
+        box-shadow: 0rem 0.2rem 0.32rem 0rem rgba(23,30,50,0.08);
+        border-radius:0.08rem;
+        opacity:0.98;
+        margin 0 auto;
+        margin-top -2.3rem;
+        overflow hidden;
+        .bannerMain{
+            width 100%;
+            height 100%;
+            background: url(/image/indexBg1.png) no-repeat center center / 120% 120%;
+        }
+        .bannerTitle {
+            font-size 0.46rem;
+            margin 0.5rem;
+            font-weight bold;
+        }
+        .bannerContent {
+            width 22.52rem;
+            font-size 0.32rem;
+            margin-left 0.5rem;
+            line-height 25px;
+        }
+        .bannerMore {
+            position absolute;
+            right 1.4rem;
+            top 3.46rem;
+            display flex;
+            justify-content center;
+            align-items center;
+            width:2.28rem;
+            height:0.7rem;
+            border-radius:0.04rem;
+            border:0.02rem solid rgba(29,159,202,1);
+            font-size 0.28rem;
+            color #1D9FCA;
+            cursor pointer;
+            &:hover{
+                opacity .7;
+            }
+            img{
+                width 0.24rem;
+                height 0.24rem;
+            }
+        }
+    }
+    .bannerList{
+        width 24rem;
+        display flex;
+        justify-content: space-between;
+        align-items center;
+        margin 0 auto;
+        margin-top 0.4rem;
+        .bannerItem {
+            position relative;
+            width 11.8rem;
+            height 6.18rem;
+            background:rgba(255,255,255,1);
+            box-shadow:0rem 0.2rem 0.32rem 0rem rgba(23,30,50,0.08);
+            border-radius:0.08rem;
+            opacity:0.98;
+        }
+        .bannerTitle {
+            font-size 0.46rem;
+            margin 0.5rem;
+            font-weight bold;
+        }
+        .bannerContent {
+            width 10.9rem;
+            font-size 0.32rem;
+            margin-left 0.5rem;
+            line-height 25px;
+        }
+        .bannerMore {
+            position absolute;
+            left 0.5rem;
+            top 4.98rem;
+            display flex;
+            justify-content center;
+            align-items center;
+            width:2.28rem;
+            height:0.7rem;
+            border-radius:0.04rem;
+            border:0.02rem solid rgba(29,159,202,1);
+            font-size 0.28rem;
+            color #1D9FCA;
+            cursor pointer;
+            &:hover{
+                opacity .7;
+            }
+            img{
+                width 0.24rem;
+                height 0.24rem;
+            }
+        }
+    }
+
+    .Innovation{
+        width 100%;
+        height 15.94rem;
+        background-color #F8FAFF;
+        margin-top 2rem;
+        overflow hidden;
+        text-align center;
+        .InnovationCard{
+            width 24.06rem;
+            display flex;
+            justify-content space-between;
+            margin 1rem auto;
+            .InnovationCardItem {
+                width 7.62rem;
+                height 7.26rem;
+                cursor pointer;
+                background-color #fff;
+                text-align center;
+                border-radius:0.04rem;
+                img{
+                    width 100%;
+                    height 4.36rem;
+                }
+                .name{
+                    margin-top .52rem;
+                    font-size .44rem;
+                    font-weight bold;
+                }
+                .tip{
+                    width 80%;
+                    margin 0 auto;
+                    line-height 28px;
+                    font-size .32rem;
+                    color #666666;
+                    margin-top .2rem;
+                }
+            }
+        }
+        .bottom{
+            width .24rem;
+            height .24rem;
+            margin-top .82rem;
+        }
+        .more{
+            transition opacity .3s;
+            cursor pointer;
+            width 2.28rem;
+            height .7rem;
+            background-color #FF0E40;
+            color #fff;
+            line-height .7rem;
+            margin .2rem auto;
+            &:hover{
+                opacity .7;
+            }
+        }
+    }
+    .ServiceArea{ 
+        .serviceMain{
+            width:24rem;
+            height:7.5rem;
+            display flex;
+            background:rgba(255,255,255,1);
+            box-shadow:0rem 0.3rem 0.4rem 0rem rgba(147,147,147,0.15);
+            margin 0 auto;
+            margin-top 1.34rem;
+            .serviceItem{
+                cursor pointer;
+                width 8rem;
+                text-align center;
+                img{
+                    margin-top 1.7rem;
+                }
+                .serviceItemTitle{
+                    font-size .5rem;
+                    margin-top .62rem;
+                    font-weight bold;
+                }
+                .serviceItemTip{
+                    width 6.08rem;
+                    line-height 28px;
+                    font-size .32rem;
+                    margin 0 auto;
+                    margin-top .3rem;
+                    color #666666;
+                }
+            }
+            .serviceItem:nth-child(2){
+                box-shadow: -0.02rem 0.32rem 0.6rem 0.1rem rgba(147,147,147,0.15);
+            }
+
+        } 
+    }
+    .OurProject{
+        height 17.7rem;
+        background-color #F8FAFF;
+        margin-top 2rem;
+        .OurProjectMain{
+            display flex;
+            justify-content space-between;
+            align-items flex-start;
+            width 24rem;
+            margin 0 auto;
+        }
+        .project{
+            position relative;
+            width 8.38rem;
+            height 14.1rem;
+            margin-top 1.8rem;
+            text-align center;
+            .projectFirstImage{
+                width 8.38rem;
+                height 10rem;
+                margin-top 1.53rem;
+            }
+            .projectSecondImage{
+                width 7.62rem;
+                height 5.6rem;
+            }
+            .projectForthImage{
+                width 7.62rem;
+                height 5.6rem;
+            }
+            .projectThirdImage{
+                width 7.62rem;
+                height 6.34rem;
+                margin-top .2rem;
+            }
+            .projectContent{
+                display flex;
+                justify-content center;
+                align-items center;
+                width 7.62rem;
+                height 8.3rem;
+                background:linear-gradient(133deg,rgba(184,231,255,1) 0%,rgba(34,157,219,1) 100%);
+                margin 0 auto;
+                font-size .3rem;
+                color #F8F9FC;
+                line-height 30px;
+                text-align jusify;
+                margin-top .2rem;
+                .content{
+                    width 5.56rem;
+                    height 4.64rem;
+                }
+            }
+            .more{
+                position absolute;
+                right: .5rem;
+                cursor pointer;
+                display flex;
+                justify-content center;
+                align-items center;
+                width 2.28rem;
+                height .7rem;
+                color #95D0ED;
+                border-radius:0.04rem;
+                border:0.02rem solid rgba(149,208,237,1);
+                margin-top 1.26rem;
+                &:hover{
+                    opacity .7;
+                }
+                img{
+                    width 0.24rem;
+                    height 0.24rem;
+                }
+            }
+        }
+    }
+    .CoreTeam{
+         text-align center;
+        .rankInfo{
+            width 24rem;
+            margin 0 auto;
+            display flex;
+            justify-content space-between;;
+            align-items center;
+            overflow hidden;
+            box-shadow:-0.02rem 0.32rem 0.6rem 0.1rem rgba(147,147,147,0.15);
+            margin-top 1.1rem;
+            cursor pointer;
+           
+            .rankInfoItem{
+                width:7.6rem;
+                height:10.86rem;
+                background:rgba(255,255,255,1);
+                box-shadow:-0.02rem 0.32rem 0.6rem 0.1rem rgba(147,147,147,0.15);
+                text-align center;
+               
+                .avatar{
+                    width:4.24rem;
+                    height:4.24rem;
+                    border-radius 50%;
+                    margin 1rem auto;
+                    margin-bottom 0;
+                }
+                .name{
+                    font-size 0.72rem;
+                    font-weight bold;
+                    margin-top .6rem;
+                }
+                .detail{
+                    width 6.4rem;
+                    margin 0 auto;
+                    font-size .4rem;
+                    color #666666;
+                    margin-top .3rem;
+                    line-height:0.68rem;
+                }
+            }
+        }
+        .bottom{
+            width .24rem;
+            height .24rem;
+            margin-top .98rem;
+        }
+        .more{
+            transition opacity .3s;
+            cursor pointer;
+            width 2.28rem;
+            height .7rem;
+            background-color #FF0E40;
+            color #fff;
+            line-height .7rem;
+            margin .2rem auto;
+            &:hover{
+                opacity .7;
+            }
+        }
+    }
+    .newsMain{
+        text-align center;
+        .swiperMain{
+            width 24rem;
+            height 9.2rem;
+            display flex;
+            justify-content flex-start;
+            align-items flex-start;
+            margin 0 auto;
+            background:rgba(255,255,255,1);
+            box-shadow:0rem 0rem 0.4rem 0rem rgba(7,35,68,0.15);
+            border-radius:0.08rem;
+            margin-top 1.2rem;
+            img{
+                width 13.2rem;
+                height 9.2rem;
+            }
+            .swiperContent{
+                text-align start;
+                .title{
+                    text-align start;
+                    font-size .48rem;
+                    font-weight bold;
+                    margin-left .7rem;
+                }
+                .time{
+                    color #666666;
+                    font-size .32rem;
+                    margin .16rem 0;
+                    margin-left .7rem;
+                }
+                .content{
+                    width 9.34rem;
+                    color #656B72;
+                    font-size .32rem;
+                    margin-left .7rem;
+                   line-height:0.68rem;
+                }
+            }
+        }
+        .bottom{
+            width .24rem;
+            height .24rem;
+            margin-top .98rem;
+        }
+        .more{
+            transition opacity .3s;
+            cursor pointer;
+            width 2.28rem;
+            height .7rem;
+            background-color #FF0E40;
+            color #fff;
+            line-height .7rem;
+            margin .2rem auto;
+            &:hover{
+                opacity .7;
+            }
         }
     }
     .bgImage {
         width 100%;
         height 100%;
+    }
+}
+
+.title{
+    margin-top 2rem;
+    text-align center;
+    .titleTop{
+        display flex;
+        justify-content center;
+        align-items center;
+        img{
+            width 0.8rem;
+            height 0.08rem;
+        }
+        img:first-child{
+            transform rotate(180deg)
+        }
+        div{
+            font-size .72rem;
+            margin 0 .46rem;
+            font-weight bold;
+        }
+    }
+    .En{
+        font-size .35rem;
+        color #5B7F91;
+        margin-top .1rem;
     }
 }

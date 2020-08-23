@@ -1,5 +1,6 @@
 // 引入公共头部
 import Header from "../components/header"
+import Footer from "../components/footer"
 import Head from 'next/head'
 
 
@@ -11,5 +12,6 @@ export default ({children}) => (
         </Head>
         <Header></Header>
         {children}
+        <Footer></Footer>
     </div>
 )

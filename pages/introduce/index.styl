@@ -1,0 +1,459 @@
+.indexImage {
+    position absolute
+    width 100%;
+    height 560px;
+}
+
+.introduceBox {
+    position relative;
+    .indexBg{
+        user-select none;
+        width 100%;
+        height 556px;
+        overflow hidden;
+        background: rgba(7,35,68, .4);
+        text-align center;
+        .indexTitle {
+            font-family: "Microsoft YaHei";
+            font-size 1.1rem;
+            color #F5F9FF;
+            margin-top 4.38rem;
+        }
+        .indexTip{
+            color #91B1E1;
+            font-size 0.36rem;
+            margin-top 0.2rem;
+        }
+    }
+}
+
+.aboutUs{
+	
+    position relative;
+    width 24rem;
+    margin 3.26rem auto;
+	.aboutUsMain{
+		position relative;
+		width 24rem;
+	}
+    .aboutBg{
+        position absolute;
+        left 13.72rem;
+        top -1.25rem;
+        width 10.24rem;
+        height 12.04rem;
+    }
+
+    .commonTitle::after{
+        z-index: 1;
+        position absolute;
+        left 1.52rem;
+        top -0.44rem;
+        content: "";
+        width 4.12rem;
+        height 2.25rem;
+        border: 0.08rem solid rgba(245,241,244,1);
+    }
+    .companyInfo{
+        position relative;
+        margin-top .6rem;
+        .compantInfoTitle{
+            font-size:0.4rem;
+            font-weight bold;
+        }
+        .companyInfoContent{
+            user-select none;
+            z-index: 2;
+            position relative;
+            width 15.56rem;
+            font-size 0.28rem;
+            color #4D4B4B;
+            margin-top .3rem;
+            margin-left .82rem;
+            line-height:0.64rem;
+            text-align justify;
+        }
+    }
+}
+.aboutUs::before{
+    z-index: 1;
+    content: "";
+    position absolute;
+    left: 7.36rem;
+    top -1.25rem;
+    width 6.36rem;
+    height 12.04rem;
+    background-color #FAFBFD;
+}
+
+// 发展历程
+.developmentHistory{
+	display flex;
+	justify-content center;
+	align-items flex-start;
+    position relative;
+    width 100%;
+    height 15.74rem;
+    background-color #F8FAFF;
+	overflow hidden;
+    .developmentHistoryMain{
+		width 24rem;
+		position relative;
+	}
+    .developmentHistoryBorder{
+		position relative;
+        display: flex;
+        justify-content center;
+		align-items center;
+		margin-top 6.68rem;
+		.row{
+			width 0.5rem;
+			height 0.9rem;
+		}
+		.borderMain{
+			position relative;
+			display flex;
+			justify-content center;
+			align-items center;
+			width 22.24rem;
+			height 0.05rem;
+			border-top 2px dashed #81A1F2;
+			.historyMain{
+				position absolute;
+				left .78rem;
+				display flex;
+				justify-content space-between;
+				align-items center;
+				width 20.68rem;
+				.historyItem{
+					transition all .3s;
+					position relative;
+					width 3.1rem;
+					cursor pointer;
+					text-align center;
+					&.active{
+						width 3.1rem;
+						height 3.1rem;
+					}
+					.historyItemIntroduce{
+						position absolute;
+						left -25%;
+						bottom -110%;
+						width 4.48rem;
+						background-color #fff;
+						box-shadow:0rem 0.06rem 0.2rem 0rem rgba(75,82,101,0.15);
+						color #666666;
+						font-size .28rem;
+						padding .56rem .36rem;
+						line-height 20px;
+					}
+					.historyItemIntroduce::after{
+						position absolute;
+						left 50%;
+						transform translateX(-50%);
+						top -20px;
+						content "";
+						width:0px;  
+						height:0px;  
+						border: 10px solid transparent;
+						border-bottom: .2rem solid #fff;
+					}
+					.historyItemAvatar{
+						width .8rem;
+						height .8rem;
+						display flex;
+						justify-content center;
+						align-items center;
+						border:0.04rem solid rgba(129,161,242,1);
+						border-radius 50%;
+						margin 0 auto;
+						&.active{
+							width 3.1rem;
+							height 3.1rem;
+						}
+						img{
+							width .6rem;
+							height .6rem;
+							border-radius 50%;
+							&.active{
+								width 2.6rem;
+								height 2.6rem;
+							}
+						}
+					}
+					.historyItemTime{
+						font-size .36rem;
+						margin-top .2rem;
+						color #666666;
+					}
+				}
+			}
+		}
+		.rowLeft{
+			margin-right 0.36rem;
+		}
+		.rowRight{
+			margin-left .36rem;
+			transform rotate(180deg);
+		}
+
+    }
+	
+}
+
+
+
+.qualifications{
+		position relative;
+		width 24rem;
+		margin 1.98rem auto;
+		display flex;
+		justify-content space-between;
+		align-items flex-start;
+		.qualificationsLeft{
+			.qualificationsContent{
+				user-select none;
+				z-index: 2;
+				position relative;
+				width 12.54rem;
+				font-size 0.28rem;
+				color #4D4B4B;
+				margin-top .3rem;
+				line-height:0.64rem;
+				text-align justify;
+			}
+		}
+		.qualificationsRight{
+			width 12rem;
+			height 12rem;
+			background url(/image/developmentBg2.png) no-repeat center center / 100% 100%;
+			margin-top: -2rem;
+		}
+	}
+	
+	.coreTeam{
+		display flex;
+		justify-content center;
+		align-items flex-start;
+		position relative;
+		width 100%;
+		height 18.5rem;
+		background-color #F8FAFF;
+		overflow hidden;
+		.coreTeamMain{
+			position relative;
+			width 24rem;
+		}
+		.rankInfo{
+		    width 24rem;
+		    margin 0 auto;
+		    display flex;
+		    justify-content space-between;;
+		    align-items center;
+		    overflow hidden;
+		    box-shadow:-0.02rem 0.32rem 0.6rem 0.1rem rgba(147,147,147,0.15);
+		    margin-top 5.16rem;
+		    cursor pointer;
+		   
+		    .rankInfoItem{
+		        width:7.6rem;
+		        height:10.86rem;
+		        background:rgba(255,255,255,1);
+		        box-shadow:-0.02rem 0.32rem 0.6rem 0.1rem rgba(147,147,147,0.15);
+		        text-align center;
+		       
+		        .avatar{
+		            width:4.24rem;
+		            height:4.24rem;
+		            border-radius 50%;
+		            margin 1rem auto;
+		            margin-bottom 0;
+		        }
+		        .name{
+		            font-size 0.72rem;
+		            font-weight bold;
+		            margin-top .6rem;
+		        }
+		        .detail{
+		            width 6.4rem;
+		            margin 0 auto;
+		            font-size .4rem;
+		            color #666666;
+		            margin-top .3rem;
+		            line-height:0.68rem;
+		        }
+		    }
+		}
+	}
+	
+	.technology{
+		position relative;
+		width 24rem;
+		margin 1.98rem auto;
+		.cardInfo{
+			display flex;
+			justify-content flex-start;
+			align-items center;
+			width 100%;
+			margin-left .96rem;
+			margin-top 1.2rem;
+			.cardItem{
+				cursor pointer;
+				margin-left .2rem;
+				img{
+					object-fit cover;
+					width 5.36rem;
+					height 6.3rem;
+					border 2px solid #0074D7;
+				}
+				.cardItemMain{
+					transition all .3s;
+					width: 4.96rem;
+					height: 2.72rem;
+					background:rgba(255,255,255,1);
+					border-radius:0rem 0rem 0.04rem 0.04rem;
+					border:0.02rem solid rgba(150,195,234,1);
+					padding .3rem .2rem;
+					margin 0 auto;
+					margin-top .16rem;
+					.cardItemMainTitle{
+						font-size 0.4rem;
+						
+					}
+					.cardItemMainContent{
+						font-size .3rem;
+						
+						margin-top .16rem;
+						color: rgba(102,102,102,1);
+						line-height:0.42rem;
+					}
+				}
+				&:hover{
+					.cardItemMain{
+						background-color #1996E0;
+						color #fff;
+						.cardItemMainContent{
+							color #fff;
+						}
+					}
+				}
+			}
+		}
+		.technologyBottom{
+			width 22.36rem;
+			display flex;
+			justify-content space-between;
+			align-items center;
+			margin-top .52rem;
+			margin-left 1.16rem;
+			img{
+				cursor pointer;
+			}
+			img:first-child{
+				transform rotate(180deg)
+			}
+		}
+	}
+	
+	.culture{
+		display flex;
+		justify-content center;
+		align-items flex-start;
+		position relative;
+		width 100%;
+		height 18.5rem;
+		background-color #F8FAFF;
+		overflow hidden;
+		.cultureMain{
+			position relative;
+			width 24rem;
+		}
+		.cardInfo{
+			display flex;
+			justify-content center;
+			align-items center;
+			margin 0 auto;
+			margin-top 5.24rem;
+			margin-left -0.6rem;
+			.cardItem{
+				cursor pointer;
+				width 7rem;
+				background:rgba(255,255,255,1);
+				border-radius:0.04rem;
+				border:0.02rem solid rgba(178,211,234,1);
+				margin-left .6rem;
+				img{
+					width 100%;
+					height 4.36rem;
+				}
+				.cardContent{
+					height 3.76rem;
+					padding .7rem .3rem;
+					.title{
+						font-size .44rem;
+						margin 0;
+						font-weight bold;
+					}
+					.content{
+						margin-top .28rem;
+						font-size 0.32rem;
+						color #666666;
+						line-height:0.48rem;
+					}
+				}
+			}
+		}
+	}
+
+    .commonTitle{
+        position relative;
+        width 5.52rem;
+        user-select none;
+        .commonTitleLabel{
+            position relative;
+            z-index: 2;
+            font-size:0.72rem;
+            font-weight bold;
+            line-height:1rem;
+            color #072344;
+        }
+        img{
+            width 0.6rem;
+            height 0.08rem;
+        }
+        .commonTitleTip{
+            position relative;
+            z-index: 2;
+            font-size .4rem;
+            color #5B7F91;
+            line-height:0.8rem;
+        }
+    }
+	
+	.commonRightTitle{
+	    position absolute;
+	    right 0;
+	    top: 1.98rem;
+	    width 5.52rem;
+	    user-select none;
+	    text-align end;
+	    .commonRightTitleLabel{
+	        position relative;
+	        z-index: 2;
+	        font-size:0.72rem;
+	        font-weight bold;
+	        color #072344;
+	        line-height:1rem;
+	    }
+	    img{
+	        width 0.6rem;
+	        height 0.08rem;
+	    }
+	    .commonRightTitleTip{
+	        position relative;
+	        z-index: 2;
+	        font-size .4rem;
+	        color #5B7F91;
+	        line-height:0.8rem;
+	    }
+	}
