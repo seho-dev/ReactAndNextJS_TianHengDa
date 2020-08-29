@@ -132,7 +132,7 @@ export default function Home() {
                 <img className="projectSecondImage" src="/image/banner1.png"></img>
                 <div className="projectContent">
                   <div className="content">
-                  公司主要有大气处理项目和工业处理项目水。大气处理项目中中包含多种，主要有烟气脱硝、烟气脱硫、烟气除尘、烟气脱白项目。<br></br> 公司的工业水处理项目中同样包含多种，同时也掌握多种技术，达到净化废水的目的。
+                  公司专注于各类水处理工程、大气治理工程、河湖整治工程、智慧水利工程、节能智控工程、市政环保运营及配套材料领域的研发、制造、销售和技术服务。
                   </div>
                 </div>
               </div>
@@ -156,19 +156,19 @@ export default function Home() {
             </div>
           <div className="rankInfo">
             <div className="rankInfoItem">
-              <img className="avatar" src="/image/banner1.png"></img>
+              <img className="avatar" src="/image/avatar1.jpg"></img>
               <div className="name">罗坚</div>
               <div className="detail">1999年美国康涅狄格大学化学系获博士学位，并在加州大学伯克利分校（伯克利国家实验室材料部）作博士后。</div>
             </div>
             <div className="rankInfoItem">
-              <img className="avatar" src="/image/banner1.png"></img>
-              <div className="name">金岩</div>
-              <div className="detail">1937年出生， 1962年毕业于东北工学院，中国环境科学学会会员，一生从事水治理研究，拥有多项发明专利。</div>
+              <img className="avatar" src="/image/avatar2.jpg"></img>
+              <div className="name">沈渭清</div>
+              <div className="detail">高级工程师，多项专利发明人及专利权人</div>
             </div>
             <div className="rankInfoItem">
-              <img className="avatar" src="/image/banner1.png"></img>
-              <div className="name">程克信</div>
-              <div className="detail">高级工程师/专家 中国氮肥协会专家组委员，全国化工合成氨设计技术委员会委员。</div>
+              <img className="avatar" src="/image/avatar3.jpg"></img>
+              <div className="name">张鹏</div>
+              <div className="detail">高级工程师/意大利热那亚大学产品设计及活动策划硕士</div>
             </div>
           </div>
           <img className="bottom" src="/image/indexBottom.png"></img>
@@ -187,9 +187,9 @@ export default function Home() {
             <div className="swiperMain">
               <img src="/image/indexNews.png"></img>
               <div className="swiperContent">
-                <div className="title">专家预测3月25-28日京津冀将出现污染</div>
-                <div className="time">2020-05-10</div>
-                <div className="content">根据中国环境监测总站会商京津冀及周边地区省级监测中心最新空气质量预测预报结果，预计3月25-28日，京津冀及周边地区大气扩散条件持续不利，将出现一次较大范围的污染过程。针对上述情况，国家大气污染防治攻关联合中心组织专家对本次过程的空气质量形势进行了预测分析。</div>
+                <div className="title">2016年9月18日公司成立</div>
+                <div className="time">2016-9-18</div>
+                <div className="content">2017年3月26日，公司与天津光华绿色生态设计研究院有限公司签署战略合作协议，就公司后期的项目设计工作达成一致意见，全权委托乙方进行设计及技术跟踪服务。</div>
               </div>
             </div>
           <img className="bottom" src="/image/indexBottom.png"></img>

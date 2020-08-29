@@ -3,44 +3,49 @@ import "../introduce/index.styl"
 
 export default class InTroduce extends React.Component {
 	constructor(props) {
-	    super(props);
-	    this.state = {
-	        historyIndex: 0,
+		super(props);
+		this.state = {
+			historyIndex: 0,
 			historyItems: [{
-				time: "2019.01"
-			},{
-				time: "2019.02"
-			},{
-				time: "2019.03"
-			},{
-				time: "2019.04"
-			},{
-				time: "2019.05"
+				time: "2015.10",
+				value: "2015年10月研发团队组建"
+			}, {
+				time: "2016.09",
+				value: "2016年9月公司成立"
+			}, {
+				time: "2017.08",
+				value: "2017年8月公司成立环保研发基地成立，路南区1200平方米大气治理药剂开始投产。"
+			}, {
+				time: "2018.05",
+				value: "2018年5月与中国环保能源发展中心、天津科技大学合作成立研发中心；山东德州高标准农田灌溉生产及示范基地成立。"
+			}, {
+				time: "2020.05",
+				value: "2020年5月汉沽化工街制造车间启用。"
 			}]
-	    }
+		}
 	}
 	// 点击力视过程中的某一个
-	handelHistoryItem(i, index){
+	handelHistoryItem(i, index) {
 		this.setState({
 			historyIndex: index
 		})
 	}
-   render() {
-	   return <div>
-            <img className="indexImage" src="/image/index_bg.png"></img>
-            <div className="introduceBox">
-                <div className="indexBg">
-                    {/* 标语 */}
-                    <p className="indexTitle" style={{'marginTop': '4.38rem'}}>保护环境 · 造福千秋</p>
-                    {/* 英文口号 */}
-                    <p className="indexTip">{'Protect the environment and benefit the future'.toLocaleUpperCase()}</p>
-                </div>
-            </div>
-            {/* 关于我们 */}
-            <div className="aboutUs">
-                {/* 标题 */}
+	render() {
+		return <div>
+			<img className="indexImage" src="/image/introduce.jpg"></img>
+			<div className="introduceBox">
+				<div className="indexBg">
+					{/* 标语 */}
+					<p className="indexTitle" style={{ 'marginTop': '4.38rem' }}>保护环境 · 造福千秋</p>
+					{/* 英文口号 */}
+					<p className="indexTip">{'Protect the environment and benefit the future'.toLocaleUpperCase()}</p>
+				</div>
+			</div>
+			{/* 关于我们 */}
+			<div className="aboutUs">
+				{/* 标题 */}
 				<div className="commonTitle">
-					<div className="commonTitleLabel">关于我们</div>
+					<div className="commonTitleLabel">公司简介</div>
 					{/* 底部的线 */}
 					<img src="/image/indexTitleRow.png" alt="" />
 					{/* 提示 */}
@@ -56,57 +61,58 @@ export default class InTroduce extends React.Component {
 					</div>
 				</div>
 				<img className="aboutBg" src="/image/developmentBg1.png" alt="" />
-            </div>
-            {/* 发展历程 */}
-            <div className="developmentHistory">
+			</div>
+			{/* 发展历程 */}
+			<div className="developmentHistory">
 				<div className="developmentHistoryMain">
 					<div className="commonRightTitle">
-					    <div className="commonRightTitleLabel">关于我们</div>
-					    {/* 底部的线 */}
-					    <img src="/image/indexTitleRow.png" alt="" />
-					    {/* 提示 */}
-					    <div className="commonRightTitleTip">Development Path</div>
+						<div className="commonRightTitleLabel">公司历程</div>
+						{/* 底部的线 */}
+						<img src="/image/indexTitleRow.png" alt="" />
+						{/* 提示 */}
+						<div className="commonRightTitleTip">Development Path</div>
 					</div>
 					{/* 底部border */}
 					<div className="developmentHistoryBorder">
-					    {/* 左侧left */}
-					    <img className="row rowLeft" src="/image/developmentRow.png"></img>
-					    {/* 中间顶部虚线 */}
-					    <div className="borderMain">
+						{/* 左侧left */}
+						<img className="row rowLeft" src="/image/developmentRow.png"></img>
+						{/* 中间顶部虚线 */}
+						<div className="borderMain">
 							<div className="historyMain">
-							{ this.state.historyItems.map((h, index) => 
-								<div key={index} onClick={this.handelHistoryItem.bind(this, h, index)} className={`historyItem ${this.state.historyIndex === index ? 'active' : ''}`}>
-									<div className={`historyItemAvatar ${this.state.historyIndex === index ? 'active' : ''}`}>
-										<img className={this.state.historyIndex === index ? 'active' : ''} src="/image/indexNews.png"></img>
-									</div>
-									<div className="historyItemTime">{h.time}</div>
-									
-									{/* 介绍 */}
-									{ this.state.historyIndex === index && 
-										<div className="historyItemIntroduce">
-											SNCR改进型脱硝技术是使用计算流体力学（CFD）和化学动力学模型学、动和化学动力学模型
-										</div> 
-									}
-								</div>) }	
+								{this.state.historyItems.map((h, index) =>
+									<div key={index} onClick={this.handelHistoryItem.bind(this, h, index)} className={`historyItem ${this.state.historyIndex === index ? 'active' : ''}`}>
+										<div className={`historyItemAvatar ${this.state.historyIndex === index ? 'active' : ''}`}>
+											<img className={this.state.historyIndex === index ? 'active' : ''} src="/image/indexNews.png"></img>
+										</div>
+										<div className="historyItemTime">{h.time}</div>
+
+										{/* 介绍 */}
+										{this.state.historyIndex === index &&
+											<div className="historyItemIntroduce">
+												{h.value}
+											</div>
+										}
+									</div>)}
 							</div>
 						</div>
-					    {/* 右侧right */}
-					    <img className="row rowRight" src="/image/developmentRow.png"></img>
+						{/* 右侧right */}
+						<img className="row rowRight" src="/image/developmentRow.png"></img>
 					</div>
 				</div>
-                
-            </div>
+
+			</div>
 			<div className="qualifications">
 				<div className="qualificationsLeft">
 					<div className="commonTitle">
-					    <div className="commonTitleLabel">资质荣誉</div>
-					    {/* 底部的线 */}
-					    <img src="/image/indexTitleRow.png" alt="" />
-					    {/* 提示 */}
-					    <div className="commonTitleTip">Development Path</div>
+						<div className="commonTitleLabel">资质荣誉</div>
+						{/* 底部的线 */}
+						<img src="/image/indexTitleRow.png" alt="" />
+						{/* 提示 */}
+						<div className="commonTitleTip">Development Path</div>
 					</div>
 					<div className="qualificationsContent">
-					天津天恒达环保工程有限公司坐落于天津滨海-北塘中关村科技园，注册资本人民币1000万元。在滨海汉沽化工区、山东平原龙门开发区有2000平方米的高标准装备制造车间和数千平方米的智慧灌溉水利示范基地。 公司拥有数十位行业技术精英，与天津大学、天津科技大学及天津农科院等国内外多家院校及研发机构建立了紧密合作关系，专业致力于各类水处理工程、大气治理工程、河湖整治工程、智慧水利工程、节能智控工程、市政环保运营及配套材料领域的研发、制造、销售和技术服务。公司消化吸收国内外先进技术，
+						公司先后取得了三体系认证及施工总承包资质<br />
+						一种高效环保型烧结机烟气除尘装置	ZL 2018 2 1617762.6<br />
 					</div>
 				</div>
 				<div className="qualificationsRight">
@@ -122,66 +128,66 @@ export default class InTroduce extends React.Component {
 						<div className="commonRightTitleTip">Core Team</div>
 					</div>
 					<div className="rankInfo">
-					  <div className="rankInfoItem">
-						<img className="avatar" src="/image/banner1.png"></img>
-						<div className="name">罗坚</div>
-						<div className="detail">1999年美国康涅狄格大学化学系获博士学位，并在加州大学伯克利分校（伯克利国家实验室材料部）作博士后。</div>
-					  </div>
-					  <div className="rankInfoItem">
-						<img className="avatar" src="/image/banner1.png"></img>
-						<div className="name">金岩</div>
-						<div className="detail">1937年出生， 1962年毕业于东北工学院，中国环境科学学会会员，一生从事水治理研究，拥有多项发明专利。</div>
-					  </div>
-					  <div className="rankInfoItem">
-						<img className="avatar" src="/image/banner1.png"></img>
-						<div className="name">程克信</div>
-						<div className="detail">高级工程师/专家 中国氮肥协会专家组委员，全国化工合成氨设计技术委员会委员。</div>
-					  </div>
+						<div className="rankInfoItem">
+							<img className="avatar" src="/image/avatar1.jpg"></img>
+							<div className="name">罗坚</div>
+							<div className="detail">1999年美国康涅狄格大学化学系获博士学位，并在加州大学伯克利分校（伯克利国家实验室材料部）作博士后。</div>
+						</div>
+						<div className="rankInfoItem">
+							<img className="avatar" src="/image/avatar2.jpg"></img>
+							<div className="name">沈渭清</div>
+							<div className="detail">高级工程师，多项专利发明人及专利权人</div>
+						</div>
+						<div className="rankInfoItem">
+							<img className="avatar" src="/image/avatar3.jpg"></img>
+							<div className="name">张鹏</div>
+							<div className="detail">高级工程师/意大利热那亚大学产品设计及活动策划硕士</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div className="technology">
 				<div className="commonTitle">
-				    <div className="commonTitleLabel">技术专利</div>
-				    {/* 底部的线 */}
-				    <img src="/image/indexTitleRow.png" alt="" />
-				    {/* 提示 */}
-				    <div className="commonTitleTip">Technical patent</div>
+					<div className="commonTitleLabel">技术专利</div>
+					{/* 底部的线 */}
+					<img src="/image/indexTitleRow.png" alt="" />
+					{/* 提示 */}
+					<div className="commonTitleTip">Technical patent</div>
 				</div>
 				<div className="cardInfo">
 					<div className="cardItem">
-						<img src="/image/banner1.png"/>
+						<img src="/image/banner1.png" />
 						<div className="cardItemMain">
 							<div className="cardItemMainTitle">SNCR改进型高效脱硝技术</div>
 							<div className="cardItemMainContent">SNCR改进型脱硝技术是使用计算流体力学（CFD）和化学动力学模型学、动力学模型（CK）…</div>
 						</div>
 					</div>
 					<div className="cardItem">
-						<img src="/image/banner1.png"/>
+						<img src="/image/banner1.png" />
 						<div className="cardItemMain">
 							<div className="cardItemMainTitle">SNCR改进型高</div>
 							<div className="cardItemMainContent">SNCR改进型脱硝技术是使用计算流体力学（CFD）和化学动力学模型学、动力学模型（CK）…</div>
 						</div>
 					</div>
 					<div className="cardItem">
-						<img src="/image/banner1.png"/>
+						<img src="/image/banner1.png" />
 						<div className="cardItemMain">
 							<div className="cardItemMainTitle">SNCR改进型高效脱硝技术</div>
 							<div className="cardItemMainContent">SNCR改进型脱硝技术是使用计算流体力学（CFD）和化学动力学模型学、动力学模型（CK）…</div>
 						</div>
 					</div>
 					<div className="cardItem">
-						<img src="/image/banner1.png"/>
+						<img src="/image/banner1.png" />
 						<div className="cardItemMain">
 							<div className="cardItemMainTitle">SNCR改进型</div>
 							<div className="cardItemMainContent">SNCR改进型脱硝技术是使用计算流体力学（CFD）和化学动力学模型学、动力学模型（CK）…</div>
 						</div>
 					</div>
-					
+
 				</div>
 				<div className="technologyBottom">
-					<img src="/image/right.png"/>
-					<img src="/image/right.png"/>
+					<img src="/image/right.png" />
+					<img src="/image/right.png" />
 				</div>
 			</div>
 			<div className="culture">
@@ -195,7 +201,7 @@ export default class InTroduce extends React.Component {
 					</div>
 					<div className="cardInfo">
 						<div className="cardItem">
-							<img src="/image/banner3.png"/>
+							<img src="/image/banner3.png" />
 							<div className="cardContent">
 								<div className="title">企业宗旨</div>
 								<div className="content">
@@ -204,7 +210,7 @@ export default class InTroduce extends React.Component {
 							</div>
 						</div>
 						<div className="cardItem">
-							<img src="/image/banner3.png"/>
+							<img src="/image/banner3.png" />
 							<div className="cardContent">
 								<div className="title">经营理念</div>
 								<div className="content">
@@ -213,7 +219,7 @@ export default class InTroduce extends React.Component {
 							</div>
 						</div>
 						<div className="cardItem">
-							<img src="/image/banner3.png"/>
+							<img src="/image/banner3.png" />
 							<div className="cardContent">
 								<div className="title">质量方针</div>
 								<div className="content">
@@ -222,8 +228,8 @@ export default class InTroduce extends React.Component {
 							</div>
 						</div>
 					</div>
-				</div>		
+				</div>
 			</div>
-        </div>
-    }
+		</div>
+	}
 }
