@@ -5,7 +5,7 @@ import Head from 'next/head'
 
 
 export default ({children}) => (
-    <div className="container">
+    <div className="container" style={{width: '100%'}}>
         <Head>
             <title>天津天恒达环保有限公司</title>
             <link rel="icon" href="/favicon.ico" />
